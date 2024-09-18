@@ -1,0 +1,61 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+/* Styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header container styling */
+#Header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the logo */
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+#logo img {
+    border-radius: 50%;
+}
+
+/* Navigation items styling */
+#NavItems ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+#NavItems ul li {
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#NavItems ul li:hover {
+    text-decoration: underline;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    #Header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #NavItems ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
